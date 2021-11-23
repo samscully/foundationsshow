@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>variable font testing/presets</title>
+
+    <style>
+        @font-face{
+            font-family:'roboto';
+            src:url('RobotoFlex.woff2');
+        }
+
+        body{font-family:'roboto',georgia,sans-serif; line-height:135%;}
+        section{overflow:auto;}
+        h2,h3{margin:0;}
+        h2{margin-top:1em;}
+        h3{font-size:.85em; padding:.5em 0;}
+        p{margin:.5em 0;}
+
+        .sample{font-size:1.5em; width:50%; float:left;}
+        ul{list-style-type:none; margin:0; padding:0; line-height:125%;}
+        .ital{font-variation-settings:'slnt' -10;}
+        .thin{font-weight:100;}
+        .light{font-weight:300;}
+        /*regular class not necessary; wght default 400*/
+        .medium{font-weight:500;}
+        .bold{font-weight:700;}
+        .black{font-weight:900;}
+        .cond{font-stretch:45%;}
+
+        .colorbar,.display{font-size:2em; text-transform:uppercase; letter-spacing:.015em;}
+        .colorbar{background:#FF4613; color:#fff; padding:1rem 3em .5em .35em; display:inline-block;}
+        .display,.copy{margin-left:1rem;}
+    </style>
+
+    <body>
+        <header>
+            <h1><a href="https://github.com/TypeNetwork/Roboto-Flex">Roboto Flex</a></h1>
+            <p>If you’re seeing sans-serif text, something’s not working!</p>
+            <p>Approximated based on <a href="https://fonts.google.com/specimen/Roboto">the Google Fonts version</a>; there are no preset instances, but the numbers seem to be the same anyway.</p>
+        </header>
+
+        <main>
+            <section><h2>default font styles</h2>
+                <div class="sample"><h3>Regular</h3><ul>
+                    <li class="thin">Roboto Flex Thin</li>
+                    <li class="thin ital">Roboto Flex Thin Italic</li>
+                    <li class="light">Roboto Flex Light</li>
+                    <li class="light ital">Roboto Flex Light Italic</li>
+                    <li>Roboto Flex Regular</li>
+                    <li class="ital">Roboto Flex Regular Italic</li>
+                    <li class="medium">Roboto Flex Medium</li>
+                    <li class="medium ital">Roboto Flex Medium Italic</li>
+                    <li class="bold">Roboto Flex Bold</li>
+                    <li class="bold ital">Roboto Flex Bold Italic</li>
+                    <li class="black">Roboto Flex Black</li>
+                    <li class="black ital">Roboto Flex Black Italic</li>
+                </ul></div><div class="sample"><h3>Condensed</h3><ul>
+                    <li class="cond thin">Roboto Flex Thin</li>
+                    <li class="cond thin ital">Roboto Flex Thin Italic</li>
+                    <li class="cond light">Roboto Flex Light</li>
+                    <li class="cond light ital">Roboto Flex Light Italic</li>
+                    <li class="cond">Roboto Flex Regular</li>
+                    <li class="cond ital">Roboto Flex Regular Italic</li>
+                    <li class="cond medium">Roboto Flex Medium</li>
+                    <li class="cond medium ital">Roboto Flex Medium Italic</li>
+                    <li class="cond bold">Roboto Flex Bold</li>
+                    <li class="cond bold ital">Roboto Flex Bold Italic</li>
+                    <li class="cond black">Roboto Flex Black</li>
+                    <li class="cond black ital">Roboto Flex Black Italic</li>
+                </ul></div>
+            </section>
+
+            <section id="cvpa">
+                <h2>from the CVPA Brand Guidelines</h2>
+                <p>The heavy, narrow structure of Roboto Condensed Bold contrasts with the letters in the CVPA logo, yet both are clean and modern.</p>
+                <p>Roboto Condensed Bold is used for primary and secondary headers. It should always be set in Condensed Bold and all capitals with slight letterspacing/tracking. Primary headers should be put into color bars.</p>
+                <p>Roboto Regular is the primary typeface for copy text. It has a large x-height making it legible at any scale. Bold and Italic are used for emphasis. If there are multiple levels of hierarchy, other weights can be used as a sub-header typeface.</p>
+
+                <div id="hierarchy">
+                    <p class="bold cond colorbar">colorbar</p>
+                    <p class="bold cond display">h1 display</p>
+                    <p class="copy">Copy text. Lorem ipsum dolor sit amet etc etc. Colorbar width can either correspond to the grid or be uniform on both sides; unsure of padding specifications.</p>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
